@@ -1,0 +1,233 @@
+Country,Model,MSE,Error Percentage,Feature Selection,Features,Type,AIC,Order,Seasonal Order,Transformation,Forecast Year (2022) Actual,Forecast Year (2022) Predicted
+Canada,ARIMA,163.53287027793044,2.333814608341184,No Features,No Features,Countrywise,81.29332446663517,"(0, 0, 0)",,No Transformation,547.944,560.731997117529
+Italy,ARIMA,24.95007573896388,1.4773881693634612,No Features,No Features,Countrywise,74.32732712565894,"(0, 0, 0)",,Differencing,338.097,333.1019949210272
+Japan,ARIMA,542.9776134830579,2.211228341846665,No Features,No Features,Countrywise,78.30266296761192,"(0, 0, 0)",,Differencing,1053.798,1030.4961199581867
+Russia,ARIMA,4728.005685118777,4.161811663683998,No Features,No Features,Countrywise,86.4464768047974,"(0, 0, 0)",,Differencing,1652.177,1720.9374950907043
+United States,SARIMA,629.5582809999719,0.4961339085014355,No Features,No Features,Countrywise,86.4464768047974,"(0, 1, 1)","(0, 3, 0, 12)",,5057.304,5032.213000000001
+China,SARIMA,1200.7918782838692,0.3040547695623487,No Features,No Features,Countrywise,86.4464768047974,"(0, 1, 1)","(0, 0, 1, 12)",,11396.777,11362.124555955115
+Germany,SARIMA,17.995983767923622,0.6373400655381011,No Features,No Features,Countrywise,86.4464768047974,"(1, 0, 1)","(0, 0, 0, 12)",,665.605,669.8471673432249
+India,SARIMA,4275.948686032164,2.310917505314382,No Features,No Features,Countrywise,86.4464768047974,"(1, 0, 0)","(0, 0, 1, 12)",,2829.644,2764.2532614659217
+France,SARIMA,3.933170813951975,0.666553177432915,No Features,No Features,Countrywise,86.4464768047974,"(1, 0, 1)","(0, 0, 0, 12)",,297.534,295.55077766905674
+United Kingdom,SARIMA,5.343321188959278,0.7254145560610288,No Features,No Features,Countrywise,86.4464768047974,"(1, 0, 1)","(0, 0, 0, 12)",,318.654,320.9655624994707
+Canada,ARIMA with exog,0.21069485322571033,0.08377043829510929,no_selection,all,Countrywise,-23.94999762823055,"(1, 0, 0)",,,547.944,547.4849849095882
+Canada,ARIMA with exog,0.02479488896102329,0.02873723027883973,mutual_info,"population
+gdp
+coal_co2
+gas_co2
+oil_co2",Countrywise,48.05783030438926,"(0, 0, 0)",,,547.944,548.101463929079
+Canada,ARIMA with exog,102.0987981289477,1.844056142734071,correlation,"population
+coal_co2
+oil_co2
+electricity_generation_twh",Countrywise,66.95844232349303,"(0, 0, 0)",,,547.944,537.8396050092572
+China,ARIMA with exog,98751.53291262905,2.7573371513680063,no_selection,all,Countrywise,71.35175439215485,"(0, 0, 1)",,,11396.777,11711.024566279564
+China,ARIMA with exog,18120.040688298403,1.1811295465114386,mutual_info,"population
+gdp
+coal_co2
+gas_co2
+oil_co2",Countrywise,91.23842835353067,"(0, 0, 0)",,,11396.777,11531.38770049702
+China,ARIMA with exog,72309.39788609788,2.3594746846793444,correlation,"population
+coal_co2
+flaring_co2
+gas_co2
+methane
+oil_co2
+electricity_generation_twh",Countrywise,74.71993860147725,"(0, 0, 1)",,,11396.777,11665.681068184358
+France,ARIMA with exog,1.9348955184466867,0.4675113495259637,no_selection,all,Countrywise,-14.638014850945545,"(0, 0, 0)",,,297.534,296.1429947813014
+France,ARIMA with exog,0.15433178071673737,0.13203561197870883,mutual_info,"population
+gdp
+coal_co2
+gas_co2
+oil_co2",Countrywise,29.525428997932316,"(0, 0, 0)",,,297.534,297.9268508377447
+France,ARIMA with exog,2.6479506136891686,0.5469131171098915,correlation,"population
+gdp
+coal_co2
+flaring_co2
+gas_co2
+methane
+oil_co2",Countrywise,-5.93942446445077,"(1, 0, 0)",,,297.534,295.90674752613825
+Germany,ARIMA with exog,1.5249148629827338,0.18552661594654846,no_selection,all,Countrywise,22.52350264986696,"(0, 0, 0)",,,665.605,666.839874432071
+Germany,ARIMA with exog,1.1192209420146544,0.1589429752024396,mutual_info,"population
+gdp
+coal_co2
+gas_co2
+oil_co2",Countrywise,20.211187001122248,"(0, 0, 0)",,,665.605,666.6629323900962
+Germany,ARIMA with exog,1.5249148629827338,0.18552661594654846,correlation,all,Countrywise,22.52350264986696,"(0, 0, 0)",,,665.605,666.839874432071
+India,ARIMA with exog,844.5272092845142,1.0270108297057357,no_selection,all,Countrywise,21.34743701583207,"(2, 0, 0)",,,2829.644,2800.583249677881
+India,ARIMA with exog,76.11545520630267,0.30832207812481066,mutual_info,"population
+gdp
+coal_co2
+gas_co2
+oil_co2",Countrywise,73.53027884447724,"(0, 0, 0)",,,2829.644,2820.9195828156658
+India,ARIMA with exog,912.0612825702725,1.06728451912606,correlation,"population
+coal_co2
+flaring_co2
+gas_co2
+oil_co2
+electricity_generation_twh",Countrywise,67.22444808328578,"(0, 0, 0)",,,2829.644,2799.4436476416204
+Italy,ARIMA with exog,0.9358228883954509,0.2861248080196306,no_selection,all,Countrywise,25.309752888841807,"(0, 0, 0)",,,338.097,337.12962060782985
+Italy,ARIMA with exog,0.41390875116928516,0.19028781842697304,mutual_info,"population
+gdp
+coal_co2
+gas_co2
+oil_co2",Countrywise,35.75818093259406,"(0, 0, 0)",,,338.097,338.740357405467
+Italy,ARIMA with exog,146.8656869782278,3.5844196817803735,correlation,"population
+coal_co2
+oil_co2",Countrywise,76.45894171337164,"(0, 0, 0)",,,338.097,350.21581541150897
+Japan,ARIMA with exog,3.573545712453533,0.17938755102229093,no_selection,all,Countrywise,2.9651624286611806,"(0, 0, 1)",,,1053.798,1055.6883824249219
+Japan,ARIMA with exog,0.2498779374408689,0.04743583898792388,mutual_info,"population
+gdp
+coal_co2
+gas_co2
+oil_co2",Countrywise,31.852612836842805,"(0, 0, 0)",,,1053.798,1053.298122077462
+Japan,ARIMA with exog,4.715500909428133,0.20606609750942953,correlation,"population
+gdp
+coal_co2
+flaring_co2
+gas_co2
+oil_co2
+electricity_generation_twh",Countrywise,17.29751742885336,"(0, 0, 0)",,,1053.798,1055.9695204142324
+Russia,ARIMA with exog,0.67546594320529,0.04974450990081895,no_selection,all,Countrywise,23.5359488043865,"(0, 0, 1)",,,1652.177,1651.3551326486559
+Russia,ARIMA with exog,47.137450152488285,0.4155530469561881,mutual_info,"population
+gdp
+coal_co2
+gas_co2
+oil_co2",Countrywise,69.22069762891742,"(0, 0, 0)",,,1652.177,1645.3113281353906
+Russia,ARIMA with exog,215.46318330416682,0.8884438060028492,correlation,"population
+flaring_co2
+gas_co2
+methane
+electricity_generation_twh",Countrywise,97.18353924579742,"(0, 0, 0)",,,1652.177,1666.8556642207036
+United Kingdom,ARIMA with exog,0.9543847604919449,0.3065789789719495,no_selection,all,Countrywise,8.444930290790307,"(0, 0, 0)",,,318.654,319.6309261796533
+United Kingdom,ARIMA with exog,2.4239092476772996,0.48858350793804883,mutual_info,"population
+gdp
+coal_co2
+gas_co2
+oil_co2",Countrywise,-0.6090827412220854,"(0, 0, 1)",,,318.654,320.2108908913849
+United Kingdom,ARIMA with exog,379.8887718603519,6.116582732127577,correlation,"population
+gdp
+coal_co2
+flaring_co2
+methane
+oil_co2",Countrywise,56.809940710707785,"(0, 0, 1)",,,318.654,338.1447355392338
+United States,ARIMA with exog,423.18526046202464,0.4067674623501002,no_selection,all,Countrywise,38.19934217171048,"(0, 0, 0)",,,5057.304,5077.87546714413
+United States,ARIMA with exog,275.41529481851273,0.3281519330820906,mutual_info,"population
+gdp
+coal_co2
+gas_co2
+oil_co2",Countrywise,66.49616375834565,"(0, 0, 1)",,,5057.304,5073.899640837838
+United States,ARIMA with exog,275.41529481851273,0.3281519330820906,correlation,"population
+gdp
+coal_co2
+gas_co2
+oil_co2",Countrywise,66.49616375834565,"(0, 0, 1)",,,5057.304,5073.899640837838
+Canada,SARIMA with exog,0.20657267250290764,0.08294691884789086,no_selection,all,Countrywise,-3.711336379345237,"(0, 0, 0)","(0, 0, 0, 12)",,547.944,547.4894973349881
+Canada,SARIMA with exog,0.02479488896102329,0.02873723027883973,mutual_info,"population
+gdp
+coal_co2
+gas_co2
+oil_co2",Countrywise,43.843259271284566,"(0, 0, 0)","(0, 0, 0, 12)",,547.944,548.101463929079
+Canada,SARIMA with exog,71.12029531215438,1.5390778922056914,correlation,"population
+coal_co2
+oil_co2
+electricity_generation_twh",Countrywise,14.0,"(0, 1, 1)","(0, 0, 1, 12)",,547.944,539.5107150343324
+China,SARIMA with exog,3665.5759359995436,0.5312379105074727,no_selection,all,Countrywise,20.0,"(0, 1, 1)","(0, 4, 0, 12)",,11396.777,11336.233000000004
+China,SARIMA with exog,3665.5759359995436,0.5312379105074727,mutual_info,"population
+gdp
+coal_co2
+gas_co2
+oil_co2",Countrywise,14.0,"(0, 1, 1)","(0, 4, 0, 12)",,11396.777,11336.233000000004
+China,SARIMA with exog,3665.5759359995436,0.5312379105074727,correlation,"population
+coal_co2
+flaring_co2
+gas_co2
+methane
+oil_co2
+electricity_generation_twh",Countrywise,18.0,"(0, 1, 1)","(0, 4, 0, 12)",,11396.777,11336.233000000004
+France,SARIMA with exog,1.9255995529731467,0.4663869472476852,no_selection,all,Countrywise,0.5763201004090988,"(0, 1, 0)","(0, 0, 0, 12)",,297.534,296.14634026037606
+France,SARIMA with exog,0.005015241755763413,0.023801774451926588,mutual_info,"population
+gdp
+coal_co2
+gas_co2
+oil_co2",Countrywise,21.099577928909248,"(0, 1, 1)","(0, 0, 0, 12)",,297.534,297.4631816284022
+France,SARIMA with exog,1.9255995528038716,0.4663869472271857,correlation,"population
+gdp
+coal_co2
+flaring_co2
+gas_co2
+methane
+oil_co2",Countrywise,-1.4236798995777455,"(0, 1, 0)","(0, 0, 0, 12)",,297.534,296.14634026043706
+Germany,SARIMA with exog,1.5094751751737177,0.18458500251537235,no_selection,all,Countrywise,24.0,"(1, 0, 1)","(0, 0, 1, 12)",,665.605,666.8336070059925
+Germany,SARIMA with exog,1.1185895699820592,0.1588981376274154,mutual_info,"population
+gdp
+coal_co2
+gas_co2
+oil_co2",Countrywise,21.744079877218375,"(1, 0, 1)","(0, 0, 0, 12)",,665.605,666.662633948955
+Germany,SARIMA with exog,1.5094751751737177,0.18458500251537235,correlation,all,Countrywise,24.0,"(1, 0, 1)","(0, 0, 1, 12)",,665.605,666.8336070059925
+India,SARIMA with exog,844.9457730023878,1.0272653012116741,no_selection,all,Countrywise,35.38248768863242,"(0, 0, 0)","(0, 0, 0, 12)",,2829.644,2800.5760490401817
+India,SARIMA with exog,51.524103438214276,0.25367251911789096,mutual_info,"population
+gdp
+coal_co2
+gas_co2
+oil_co2",Countrywise,51.07281744940577,"(0, 0, 1)","(0, 0, 0, 12)",,2829.644,2822.4659707831315
+India,SARIMA with exog,13.131333352174016,0.12806268798369416,correlation,"population
+coal_co2
+flaring_co2
+gas_co2
+oil_co2
+electricity_generation_twh",Countrywise,42.554969800148186,"(1, 1, 0)","(0, 0, 0, 12)",,2829.644,2826.0202818332305
+Italy,SARIMA with exog,0.7516889999997366,0.2564352833653798,no_selection,all,Countrywise,18.0,"(0, 1, 0)","(0, 4, 0, 12)",,338.097,337.23000000000013
+Italy,SARIMA with exog,0.41390875116928516,0.19028781842697304,mutual_info,"population
+gdp
+coal_co2
+gas_co2
+oil_co2",Countrywise,32.94901056237508,"(0, 0, 0)","(0, 0, 0, 12)",,338.097,338.740357405467
+Italy,SARIMA with exog,0.7516889999997366,0.2564352833653798,correlation,"population
+coal_co2
+oil_co2",Countrywise,8.0,"(0, 1, 0)","(0, 4, 0, 12)",,338.097,337.23000000000013
+Japan,SARIMA with exog,3.5569421741037495,0.1789703273388419,no_selection,all,Countrywise,7.597469974304639,"(0, 0, 1)","(0, 0, 0, 12)",,1053.798,1055.6839857300902
+Japan,SARIMA with exog,0.23326334648139824,0.045831690972313224,mutual_info,"population
+gdp
+coal_co2
+gas_co2
+oil_co2",Countrywise,22.073626088481873,"(0, 0, 1)","(0, 0, 0, 12)",,1053.798,1053.3150265571676
+Japan,SARIMA with exog,4.557581851173678,0.202586204789969,correlation,"population
+gdp
+coal_co2
+flaring_co2
+gas_co2
+oil_co2
+electricity_generation_twh",Countrywise,9.061962908948727,"(0, 0, 1)","(0, 0, 0, 12)",,1053.798,1055.9328493743526
+Russia,SARIMA with exog,0.658702661052149,0.049123368184872264,no_selection,all,Countrywise,23.34984200743465,"(0, 0, 1)","(0, 0, 0, 12)",,1652.177,1651.3653950092241
+Russia,SARIMA with exog,14.239989179368438,0.2284011349323683,mutual_info,"population
+gdp
+coal_co2
+gas_co2
+oil_co2",Countrywise,163.46719322030125,"(1, 1, 1)","(0, 0, 0, 12)",,1652.177,1655.9505910190915
+Russia,SARIMA with exog,14.575748789215492,0.23107814114648123,correlation,"population
+flaring_co2
+gas_co2
+methane
+electricity_generation_twh",Countrywise,82.33663827024378,"(1, 1, 1)","(0, 0, 0, 12)",,1652.177,1648.3591800999502
+United Kingdom,SARIMA with exog,0.7107119684340296,0.2645619847854908,no_selection,all,Countrywise,10.642387314535396,"(1, 1, 0)","(0, 0, 0, 12)",,318.654,319.49703734699835
+United Kingdom,SARIMA with exog,1.7076568515399755,0.41009165136252757,mutual_info,"population
+gdp
+coal_co2
+gas_co2
+oil_co2",Countrywise,18.0,"(1, 1, 1)","(0, 0, 1, 12)",,318.654,319.96077345073275
+United Kingdom,SARIMA with exog,274.29151021778074,5.197407973731822,correlation,"population
+gdp
+coal_co2
+flaring_co2
+methane
+oil_co2",Countrywise,50.26833000276022,"(0, 1, 1)","(0, 0, 0, 12)",,318.654,335.2157484046154
+United States,SARIMA with exog,423.18526046202464,0.4067674623501002,no_selection,all,Countrywise,36.04282125612561,"(0, 0, 0)","(0, 0, 0, 12)",,5057.304,5077.87546714413
+United States,SARIMA with exog,106.408486748267,0.20397130439176075,mutual_info,"population
+gdp
+coal_co2
+gas_co2
+oil_co2",Countrywise,18.0,"(1, 1, 1)","(0, 0, 1, 12)",,5057.304,5067.619448935857
+United States,SARIMA with exog,106.408486748267,0.20397130439176075,correlation,"population
+gdp
+coal_co2
+gas_co2
+oil_co2",Countrywise,18.0,"(1, 1, 1)","(0, 0, 1, 12)",,5057.304,5067.619448935857
