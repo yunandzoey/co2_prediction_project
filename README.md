@@ -55,7 +55,7 @@ $ conda activate co2‑predict
 
 # 3. Open JupyterLab and execute notebooks in order
 $ jupyter lab
-# Run ➡ 01_data_exploratory.ipynb ➡ 02_predict_lr.ipynb ➡ 03_predict_ts.ipynb
+# Run ➡ 01_data_exploratory.ipynb ➡ 02_predict_lr.ipynb (~16m) ➡ 03_predict_ts.ipynb (~42m)
 
 ```
 > **Tip:** The notebooks are 100 % reproducible—no external API calls, all data shipped in `data/`.
