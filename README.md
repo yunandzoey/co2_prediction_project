@@ -97,7 +97,7 @@ Explore the data & model results through the live Tableau Public dashboard:
 | Environment | Jupyter Lab, conda |
 
 ## Authors
-* **Yunhan Chiu** – *Data Scientist & M.Sc. DA&DS ’25*  
+* **Yunhan Chiu** – *M.Sc. DA&DS ’25*  
 * **Chi Wen Lee** – *M.Sc. DA&DS ’25*
 
 > This project was completed as part of the *Economic Modeling of Energy & Climate Systems* (EMECS) course at RWTH Aachen University, 2024.
