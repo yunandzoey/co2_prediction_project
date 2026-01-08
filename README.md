@@ -91,6 +91,12 @@ Before modelling, we perform rigorous diagnostics to understand the data's quali
 - **Kruskal-Wallis H Test**:
     - *Purpose*: A non-parametric test used to determine if there are statistically significant differences between the distributions of CO₂ emissions across multiple countries.
     - *Insight*: Confirmed that CO₂ emission levels vary significantly by region, validating the "two-pronged" per-country modelling strategy.
+    - **Results**:
+      | Feature | H-Statistic | p-value | Result |
+      | :--- | :--- | :--- | :--- |
+      | `co2` | 47.05 | 1.48e-09 | Reject Null |
+      | `gdp` | 39.55 | 5.35e-08 | Reject Null |
+      | `population` | 45.92 | 2.55e-09 | Reject Null |
 - **ACF & PACF Plots**: 
     - *Purpose*: To analyze autocorrelation and partial autocorrelation for time-series stationarity.
     - *Insight*: Confirmed weak autocorrelation in the short annual series, providing further justification for the underperformance of ARIMA models.
@@ -104,6 +110,14 @@ To help interpret the statistical tests above, we use two key metrics:
 - **PCA (Principal Component Analysis)**: 
     - *Purpose*: To visualize high-dimensional data and diagnose multicollinearity via factor loadings.
     - *Insight*: Scree plots revealed that over 95% of total variance is captured by just the first 2-3 components, suggesting high feature redundancy which justifies the use of **Lasso (L1)** for feature selection.
+    - **PC1 Loading Scores**:
+      | Feature | PC1 Loading |
+      | :--- | :--- |
+      | `gdp` | 0.4079 |
+      | `elec_gen` | 0.4066 |
+      | `oil_co2` | 0.4007 |
+      | `methane` | 0.3978 |
+      | `coal_co2` | 0.3444 |
 - **Variance Inflation Factor (VIF)**:
     - *Purpose*: To quantify the severity of multicollinearity among exogenous variables.
     - *Insight*: Confirmed manageable VIF levels (< 5) after selecting key drivers, ensuring stable coefficient estimates in the regression models.
